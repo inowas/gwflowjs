@@ -1,7 +1,5 @@
-import erf from './erf.js';
-import erfc from './erfc.js';
-import * as mounding from './mounding';
-import * as transport1D from './transport1D';
-import numInt from './numericallyIntegrate.js';
+import * as helpers from './helpers';
+import * as mounding from './gwMounding/mounding';
+import * as transport1d from './transport1d/transport1d';
 
-export { erf, erfc, numInt, mounding, transport1D };
+export { helpers, mounding, transport1d };

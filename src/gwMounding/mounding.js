@@ -1,5 +1,4 @@
-import erf from './erf';
-import numericallyIntegrate from './numericallyIntegrate';
+import { erf, numericallyIntegrate } from '../helpers/index';
 
 function S(alpha, beta) {
     const func = (tau) => {
