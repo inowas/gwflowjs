@@ -8,7 +8,6 @@ chai.expect();
 const expect = chai.expect;
 
 describe('Given the transport1D-function (ogata-banks)', () => {
-
     const values = [
         [725, 15, 365, 2.592, 0.002, 0.23, 0.923, 0.01, 0.02313],
         [500, 15, 365, 2.592, 0.002, 0.23, 0.923, 0.01, 0.02313],
@@ -16,8 +15,7 @@ describe('Given the transport1D-function (ogata-banks)', () => {
         [500, 10, 13650, 2.592, 0.002, 0.23, 0.923, 0.01, 1.0000]
     ];
 
-    values.forEach( v => {
-
+    values.forEach(v => {
         const decimals = 5;
 
         const C0 = v[0];
@@ -37,7 +35,6 @@ describe('Given the transport1D-function (ogata-banks)', () => {
 });
 
 describe('Given the transport1D-function (ogata-banks)', () => {
-
     const values = [
         [725, 15, 365, 2.592, 0.002, 0.23, 0.923, 0.01, 2500],
         [500, 15, 365, 2.592, 0.002, 0.23, 0.923, 0.01, 2500],
@@ -46,8 +43,7 @@ describe('Given the transport1D-function (ogata-banks)', () => {
         [500, 10, 13650, 2.592, 0.002, 0.23, 0.923, 0.01, 180]
     ];
 
-    values.forEach( v => {
-
+    values.forEach(v => {
         const decimals = 5;
 
         const C0 = v[0];
@@ -67,7 +63,6 @@ describe('Given the transport1D-function (ogata-banks)', () => {
 });
 
 describe('Given the transport1D-function (ogata-banks)', () => {
-
     const values = [
         [725, 15, 365, 2.592, 0.002, 0.23, 0.923, 0.01, 20],
         [500, 15, 365, 2.592, 0.002, 0.23, 0.923, 0.01, 20],
@@ -76,8 +71,7 @@ describe('Given the transport1D-function (ogata-banks)', () => {
         [500, 10, 13650, 2.592, 0.002, 0.23, 0.923, 0.01, 400]
     ];
 
-    values.forEach( v => {
-
+    values.forEach(v => {
         const decimals = 5;
 
         const C0 = v[0];
