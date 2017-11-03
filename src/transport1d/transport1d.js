@@ -1,4 +1,4 @@
-import erfc from './erfc';
+import {erfc} from '../helpers/index';
 
 /*
 T08. 1D transport model (Ogata-Banks)
