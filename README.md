@@ -8,5 +8,5 @@ yarn install
 
 ## Tests 
 
-yarn build --env=dev && yarn test
+yarn test
 
