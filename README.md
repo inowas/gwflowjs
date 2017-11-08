@@ -4,8 +4,8 @@ A set of analytical functions to calculate different kind of groundwater-flow pr
 
 ## Documentation
 
+- [1D transport model (Ogata-Banks)](https://wiki.inowas.hydro.tu-dresden.de/t08-1d-transport-model-ogata-banks/)
 - [Groundwater mounding (Hantush)](https://wiki.inowas.hydro.tu-dresden.de/t02-groundwater-mounding-hantush/)
-- [1D transport model (Ogata-Banks](https://wiki.inowas.hydro.tu-dresden.de/t08-1d-transport-model-ogata-banks/)
 
 ## Contribute
 
