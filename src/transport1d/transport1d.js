@@ -81,7 +81,7 @@ export function calculateTmax(x, K, I, ne, alphaL, Kd) {
     let c = 0;
     let t = 0;
     while (c < 0.9999) {
-        c = this.calculateC(x, t, K, I, ne, alphaL, Kd);
+        c = this.calculateCC0(x, t, K, I, ne, alphaL, Kd);
         t = t + 20;
     }
 
@@ -92,20 +92,19 @@ export function calculateXmax(t, K, I, ne, alphaL, Kd) {
     let c = 1;
     let x = 0;
     while (c > 0.0001) {
-        c = this.calculateC(x, t, K, I, ne, alphaL, Kd);
+        c = this.calculateCC0(x, t, K, I, ne, alphaL, Kd);
         x = x + 20;
     }
 
     return x;
 }
 
-export function calculateC(x, t, K, I, ne, alphaL, Kd) {
+export function calculateCC0(x, t, K, I, ne, alphaL, Kd) {
     const vx = calculateVx(K, ne, I);
     const DL = calculateDL(alphaL, vx);
     const R = calculateR(ne, Kd);
 
-    const term1 = erfc((x - (vx * t / R)) / (2 * Math.sqrt(DL * t / R)));
-    const term2 = erfc((x + (vx * t / R)) / (2 * Math.sqrt(DL * t / R)));
-
+    const term1 = Number(erfc((x - (vx * t / R)) / (2 * Math.sqrt(DL * t / R))));
+    const term2 = Number(erfc((x + (vx * t / R)) / (2 * Math.sqrt(DL * t / R))));
     return (0.5 * (term1 + Math.exp(vx * x / DL) * term2));
 }

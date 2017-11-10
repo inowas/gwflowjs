@@ -1,4 +1,4 @@
-export default function erf(x, decimals = 7) {
+export default function erf(x, decimals = 16) {
     const a1 = 0.254829592;
     const a2 = -0.284496736;
     const a3 = 1.421413741;
